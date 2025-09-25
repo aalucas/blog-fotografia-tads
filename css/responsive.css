@@ -1,0 +1,53 @@
+@media (max-width: 48rem) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        max-height: 6vh;
+    }
+
+    header .logo{
+        margin: 5px auto;
+    }
+
+    nav .menu {
+        margin-top: 30px;
+        flex-direction: column; 
+    }
+
+    nav .menu a {
+        display: block;
+        padding: 0.625rem;
+    }
+
+    main .section-about {
+        margin-top: 12px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main .button-back {
+        position: fixed; 
+}
+
+
+    main .section-about .paragraph{
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main .portfolio {
+        padding: 5px 5px;
+        margin: 5px 20px;
+    }
+
+    main .portfolio .card {
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

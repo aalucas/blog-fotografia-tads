@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de fotografia de Lucas Oliveira, compartilhando portfólio e paixões pela arte da imagem.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22📷</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Portfolio Photography Blog</title>
+</head>
+<body>
+    
+    <!-- Header da Página -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <h1 class="title">Awesome Photography</h1>  
+    </header>
+
+    <!-- Nav da Página -->
+    <nav>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#section-about">About Me</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main da Página -> Local onde ficará as sessões -->
+    <main>
+        <section class="section-about" id="section">
+            <h2>Hi There 👋📷</h2>
+            <p>My name is Lucas Oliveira, and I developed this blog to share a hobby that I love so much, PHOTOGRAPHY. I hope you like it.</p>
+            <img src="/img/fotografo.webp" alt="Fotógrafo Lucas Oliveira" loading="lazy" class="fotografo">
+        </section>
+
+        <div class="button-back">
+            <a href="#top" aria-label="Voltar ao topo da página"><i class="fa-solid fa-circle-up"></i></a>
+        </div>
+
+        <section class="portfolio" id="portfolio">
+            <h2>Enjoy My Work</h2>
+            <div class="cards">  <!-- Agora uma única div para todos os cards, use flex/grid no CSS -->
+                <figure class="card">
+                    <img src="img/clouds.jpeg" alt="Nuvens dramáticas" loading="lazy">
+                    <figcaption class="paragraph"><i class="fa-solid fa-cloud"></i>Clouds</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="img/forest.jpeg" alt="Floresta exuberante" loading="lazy">
+                    <figcaption class="paragraph"><i class="fa-solid fa-tree"></i>Forest</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="img/hero.jpeg" alt="Montanhas ao pôr do sol" loading="lazy">
+                    <figcaption class="paragraph"><i class="fa-solid fa-mountain-sun"></i>Mountains</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="img/setup.jpg" alt="Setup de Trabalho" loading="lazy">
+                    <figcaption class="paragraph"><i class="fa-solid fa-computer"></i>Setup</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="img/flower.jpg" alt="Setup de Trabalho" loading="lazy">
+                    <figcaption class="paragraph"><i class="fa-solid fa-sun"></i>Flower</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="img/tokyo.jpg" alt="Setup de Trabalho" loading="lazy" width="300">
+                    <figcaption class="paragraph"><i class="fa-solid fa-city"></i>Tokyo</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <div class="button-back">
+            <a href="#top" aria-label="Voltar ao topo da página"><i class="fa-solid fa-circle-up"></i></a>
+        </div>
+    </main>
+
+    <!-- Footer da Página -->
+    <footer>
+        <div class="credits">
+            <p>&copy; Credits by Lucas Oliveira</p>
+        </div>
+        <div class="links" id="contact">
+            <a href="#" target="_blank" rel="noopener" aria-label="Contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" target="_blank" rel="noopener" aria-label="Perfil no LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Enviar email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
