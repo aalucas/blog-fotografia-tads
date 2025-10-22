@@ -1,53 +1,144 @@
 @media (max-width: 48rem) {
     header {
         flex-direction: column;
-        text-align: center;
-        max-height: 6vh;
+        padding: 10px;
     }
 
-    header .logo{
-        margin: 5px auto;
+    header .logo {
+        margin: 0.5px 0.5px auto;
+        font-size: 1.2rem;
+    }
+
+    header .title {
+        font-size: 1.8rem;
     }
 
     nav .menu {
-        margin-top: 30px;
-        flex-direction: column; 
+        margin-top: 15px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav .menu a {
         display: block;
         padding: 0.625rem;
+        font-size: 1rem;
+        transition: background-color 0.2s ease;
+    }
+
+    nav .menu a:hover {
+        background-color: rgba(0, 212, 255, 0.1);
+        border-radius: 5px;
     }
 
     main .section-about {
-        margin-top: 12px;
+        margin-top: 20px;
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
-    main .button-back {
-        position: fixed; 
-}
+    main .section-about h2 {
+        font-size: 2rem;
+    }
 
+    main .section-about p {
+        font-size: 1.2rem;
+    }
 
-    main .section-about .paragraph{
+    main .section-about .fotografo {
         max-width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        width: 100%;
+    }
+
+    .button-back {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
     }
 
     main .portfolio {
-        padding: 5px 5px;
-        margin: 5px 20px;
+        padding: 20px;
+        margin: 10px;
     }
 
-    main .portfolio .card {
-        margin-top: 10px;
-        gap: 5px;
+    main .portfolio .cards {
+        gap: 20px;
+    }
+
+    main .portfolio .cards .card {
+        max-width: 100%;
+        margin: 10px 0;
     }
 
     footer {
         text-align: center;
+        padding: 15px;
+    }
+
+    footer .credits {
+        font-size: 1rem;
+    }
+
+    footer .links a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact .socials {
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        order: 2;
+    }
+
+    .contact-form {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form .form-row.half {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 360px) {
+    header .title {
+        font-size: 1.5rem;
+    }
+
+    header .logo {
+        font-size: 1rem;
+    }
+
+    nav .menu a {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    main .section-about h2 {
+        font-size: 1.8rem;
+    }
+
+    main .section-about p {
+        font-size: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact .socials a {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }
