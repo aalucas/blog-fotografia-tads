@@ -353,30 +353,6 @@ main .section-about p {
     box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
-
-
-/* Responsividade */
-@media (max-width: 900px) {
-    .contact {
-        grid-template-columns: 1fr; /* empilha em telas pequenas */
-        padding: 26px;
-    }
-    .contact .socials {
-        grid-column: 1 / -1;
-        grid-auto-flow: column;
-        justify-content: center;
-        gap: 12px;
-        order: 2;
-    }
-    .contact-form {
-        grid-column: 1 / -1;
-        grid-template-columns: 1fr; /* formulário passa para uma coluna */
-    }
-    .contact-form .form-row.half {
-        grid-column: 1 / -1; /* forçar full width em mobile */
-    }
-}
-
 main h2 {
     display: flex;
     justify-content: center;
@@ -479,4 +455,5 @@ a:focus,
 button:focus {
     outline: 2px solid #00d4ff; /* Destaque para keyboard navigation */
 }
+
 
