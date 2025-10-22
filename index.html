@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog de fotografia de Lucas Oliveira, compartilhando portfólio e paixões pela arte da imagem.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22📷</text></svg>">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
     <title>Portfolio Photography Blog</title>
@@ -44,14 +44,13 @@
                     <!-- Versão pequena por padrão (mobile) -->
                     <source type="image/webp" srcset="img/fotografo-small.webp">
                     <img
-                        src="img/fotografo-medium.webp"
+                        src="img/fotografo.webp"
                         alt="Fotógrafo Lucas Oliveira"
                         class="fotografo"
                         loading="lazy"
                         decoding="async"
                         width="1200"
-                        height="800"
-                        sizes="(max-width:600px) 80vw, (max-width:1200px) 50vw, 720px">
+                        height="800">
                 </picture>
             </figure>
         </section>
@@ -83,15 +82,15 @@
                 </div>
             </form>
 
-            <div class="socials" aria-label="Redes sociais">
+            <nav class="socials" aria-label="Redes sociais">
                 <a href="#" target="_blank" rel="noopener" aria-label="Contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#" target="_blank" rel="noopener" aria-label="Perfil no LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#" target="_blank" rel="noopener" aria-label="Perfil no Instagram"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+            </nav>
          </section>
 
          <section class="photo-panel" id="photo-panel" aria-label="Painel de fotos">
-            <h2>Let me Show my Photo Panel</h2>
+            <h2>Let me Show myPhoto Panel</h2>
             <div class="panel-grid" role="list" aria-label="Galeria de imagens">
                 <div class="photo-item item1" role="listitem" aria-label="Clouds"></div>
                 <div class="photo-item item2" role="listitem" aria-label="Forest"></div>
@@ -141,7 +140,7 @@
         <div class="credits">
             <p>&copy; Credits by Lucas Oliveira</p>
         </div>
-        <div class="links" id="contact">
+        <div class="links">
             <a href="#" aria-label="Camera Emoji"><i class="fa-solid fa-camera"></i></a>
         </div>
     </footer>
