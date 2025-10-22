@@ -24,8 +24,8 @@
     <nav>
         <div class="menu">
             <a href="#">Home</a>
-            <a href="#portfolio">Portfolio</a>
             <a href="#section-about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
@@ -35,7 +35,70 @@
         <section class="section-about" id="section">
             <h2>Hi There 👋📷</h2>
             <p>My name is Lucas Oliveira, and I developed this blog to share a hobby that I love so much, PHOTOGRAPHY. I hope you like it.</p>
-            <img src="img/fotografo.webp" alt="Fotógrafo Lucas Oliveira" loading="lazy" class="fotografo">
+            <figure>
+                <picture>
+                    <!-- Versão grande para telas largas -->
+                    <source media="(min-width:1201px)" type="image/png" srcset="./img/fotografo-large.png">
+                    <!-- Versão média para tablets e desktops médios -->
+                    <source media="(min-width:601px)" type="image/png" srcset="img/fotografo-medium.png">
+                    <!-- Versão pequena por padrão (mobile) -->
+                    <source type="image/webp" srcset="img/fotografo-small.webp">
+                    <img
+                        src="img/fotografo-medium.webp"
+                        alt="Fotógrafo Lucas Oliveira"
+                        class="fotografo"
+                        loading="lazy"
+                        decoding="async"
+                        width="1200"
+                        height="800"
+                        sizes="(max-width:600px) 80vw, (max-width:1200px) 50vw, 720px">
+                </picture>
+            </figure>
+        </section>
+
+        <!-- Section do Contato -->
+         <section class="contact" id="contact">
+            <h2>Do You Want To Contact Me?</h2>
+            <p style="font-weight: 900; font-size: 1.2rem;">Follow My Social Medias</p>
+
+            <form action="contact.php" method="post" class="contact-form" aria-label="Formulário de contato">
+                <div class="form-row half">
+                    <label for="name">Complete Name</label>
+                    <input id="name" name="name" type="text" required maxlength="100" placeholder="Your Complete Name">
+                </div>
+
+                <div class="form-row half">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required maxlength="254" placeholder="email@example.com">
+                </div>
+
+                <div class="form-row">
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" type="text" required maxlength="150" placeholder="Subject Of Message">
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Menssage</label>
+                    <textarea id="message" name="message" rows="6" required maxlength="4000" placeholder="Write Your Message Here..."></textarea>
+                </div>
+            </form>
+
+            <div class="socials" aria-label="Redes sociais">
+                <a href="#" target="_blank" rel="noopener" aria-label="Contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Perfil no LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank" rel="noopener" aria-label="Perfil no Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         </section>
+
+         <section class="photo-panel" id="photo-panel" aria-label="Painel de fotos">
+            <h2>Let me Show my Photo Panel</h2>
+            <div class="panel-grid" role="list" aria-label="Galeria de imagens">
+                <div class="photo-item item1" role="listitem" aria-label="Clouds"></div>
+                <div class="photo-item item2" role="listitem" aria-label="Forest"></div>
+                <div class="photo-item item3" role="listitem" aria-label="Mountains"></div>
+                <div class="photo-item item4" role="listitem" aria-label="Setup"></div>
+                <div class="photo-item item5" role="listitem" aria-label="Tokyo"></div>
+            </div>
         </section>
 
         <div class="button-back">
@@ -44,7 +107,7 @@
 
         <section class="portfolio" id="portfolio">
             <h2>Enjoy My Work</h2>
-            <div class="cards">  <!-- Agora uma única div para todos os cards, use flex/grid no CSS -->
+            <div class="cards">  
                 <figure class="card">
                     <img src="img/clouds.jpeg" alt="Nuvens dramáticas" loading="lazy">
                     <figcaption class="paragraph"><i class="fa-solid fa-cloud"></i>Clouds</figcaption>
@@ -79,9 +142,7 @@
             <p>&copy; Credits by Lucas Oliveira</p>
         </div>
         <div class="links" id="contact">
-            <a href="#" target="_blank" rel="noopener" aria-label="Contato via WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#" target="_blank" rel="noopener" aria-label="Perfil no LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" aria-label="Enviar email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" aria-label="Camera Emoji"><i class="fa-solid fa-camera"></i></a>
         </div>
     </footer>
 </body>
