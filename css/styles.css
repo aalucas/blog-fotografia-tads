@@ -47,7 +47,7 @@ header .logo:hover {
 }
 
 header .title{
-    font-size: 3rem;
+    font-size: 1.2rem;
     color: aquamarine;
     text-shadow: 0 0 3px #fff, 0 0 10px #0d4d5a, 0 0 20px #60696b;
     cursor: pointer;
@@ -455,6 +455,7 @@ a:focus,
 button:focus {
     outline: 2px solid #00d4ff; /* Destaque para keyboard navigation */
 }
+
 
 
 
